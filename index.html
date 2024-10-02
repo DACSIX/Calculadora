@@ -3,31 +3,34 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/style.css">
     <title>Calculadora</title>
 </head>
 <body>
     <header>
-        <h1>Calculadora Cientifica</h1>
+        <h1 class="titulo">Calculadora Cientifica</h1>
     </header>
-    <main class="container">
-        <input type="button" value="%">
-        <input type="button" value="AC">
-        <input type="button" value="borrar">
-        <input type="button" value="/">
-        <input type="button" value="X">
-        <input type="button" value="-">
-        <input type="button" value="+">
-        <input type="button" value="=">
-        <input type="button" value="7">
-        <input type="button" value="8">
-        <input type="button" value="9">
-        <input type="button" value="4">
-        <input type="button" value="5">
-        <input type="button" value="6">
-        <input type="button" value="1">
-        <input type="button" value="2">
-        <input type="button" value="3">
-        <input type="button" value=",">
-    </main>
+    <main class="container sombra">
+        <input class="fuente" id="resultado" type="text" placeholder="0">
+        <input class="fuente" id="porcentaje"  type="button" value="%">
+        <input class="fuente" id="borrar-todo" type="button" value="AC">
+        <input class="fuente" id="borrar" type="button" value="borrar">
+        <input class="fuente" id="dividir" type="button" value="/">
+        <input class="fuente" id="multiplicar" type="button" value="X">
+        <input class="fuente" id="restar" type="button" value="-">
+        <input class="fuente" id="sumar" type="button" value="+">
+        <input class="fuente" id="igual" type="button" value="=">
+        <input class="fuente" id="siete" type="button" value="7">
+        <input class="fuente" id="ocho" type="button" value="8">
+        <input class="fuente" id="nueve" type="button" value="9">
+        <input class="fuente" id="cuatro" type="button" value="4">
+        <input class="fuente" id="cinco" type="button" value="5">
+        <input class="fuente" id="seis" type="button" value="6">
+        <input class="fuente" id="uno" type="button" value="1">
+        <input class="fuente" id="dos" type="button" value="2">
+        <input class="fuente" id="tres" type="button" value="3">
+        <input class="fuente" id="cero" type="button" value="0">
+        <input class="fuente" id="coma" type="button" value=",">
+    <script src="./js/main.js"></script>
 </body>
 </html>
