@@ -1,5 +1,6 @@
 :root{
     --primario: black;
+    --GrisClaro: #9e9e9e;
 }
 *{
     margin: 0;
@@ -32,12 +33,14 @@ html{
 /*Botones*/
 
 .fuente{
-    font-size: 4rem;
+    font-size: 3rem;
+    border-radius: 5rem;
 }
 #resultado{
     grid-column: 1/5;
     text-align: end;
     color: var(--primario);
+    padding: 0rem 1rem 0rem 0rem;;
 }
 
 #borrar-todo{
@@ -75,6 +78,7 @@ html{
 #cero{
     grid-column: 1/3;
     text-align: left;
+    padding: 0rem 0rem 0rem 1rem;
 }
 #cero,#coma{
     grid-row: 6/7;
