@@ -13,10 +13,13 @@ const numero1 = document.querySelector("#uno");
 const numero2 = document.querySelector("#dos");
 const numero3 = document.querySelector("#tres");
 const numero0 = document.querySelector("#cero");
+const sumar = document.querySelector("#sumar");
+const igual = document.querySelector("#igual");
 
 resultado.value= "0";
-let numberOne;
-let numberTwo;
+let numberOne = 0;
+let numberTwo = 0;
+let operador = null;
 let res = "";
 //Numeros
 
@@ -74,4 +77,37 @@ numero0.addEventListener("click", ()=>{
 borrar_todo.addEventListener("click", () =>{
     resultado.value = "0";
     res = "";
+    numberOne = 0;
+    //numberTwo = 0;
+    operador = null;
+})
+
+//borrar de a poco
+
+borrar.addEventListener("click", ()=>{
+    res = res.slice(0,-1); //borra el ultimo caracter de la cadena
+    resultado.value = res;
+    numberOne = 0;
+})
+
+//Operacion sumar numeros
+sumar.addEventListener("click", ()=>{
+    if(res != ""){
+        numberOne += parseFloat(res);
+    }
+    res = "";
+    operador = "+";
+    resultado.value = numberOne.toString();
+})
+
+//igual
+igual.addEventListener("click", ()=>{
+    if(operador === "+"){
+        if(res != ""){
+            numberOne += parseFloat(res);
+        }
+        resultado.value = numberOne.toString();
+        res = "";
+        operador = null;
+    }
 })
